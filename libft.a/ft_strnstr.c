@@ -6,7 +6,7 @@
 /*   By: rdavid-g <rdavid-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 16:58:14 by rdavid-g          #+#    #+#             */
-/*   Updated: 2024/11/30 23:36:02 by rdavid-g         ###   ########.fr       */
+/*   Updated: 2024/12/06 23:10:31 by rdavid-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,20 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 
 	i = 0;
-	if (little == NULL)
-		return (big);
-	while (i < len && big[i] != '\0')
+	if (little[0] == '\0')
+		return ((char *)big);
+	while (i < len && big[i])
 	{
 		j = 0;
-		if (little[j] == big[i])
+		while (i + j < len && little[i])
 		{
-			i++;
+			if (little[j] != big[i + j])
+				break;
 			j++;
 		}
+		if (little[j] == '\0')
+			return ((char *)&big[i]);
+		i++;
 	}
+	return (NULL);
 }

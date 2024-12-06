@@ -6,7 +6,7 @@
 /*   By: rdavid-g <rdavid-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/21 23:51:38 by rdavid-g          #+#    #+#             */
-/*   Updated: 2024/11/30 23:04:10 by rdavid-g         ###   ########.fr       */
+/*   Updated: 2024/12/06 18:59:32 by rdavid-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,15 @@ static size_t	ft_wordcount(char const *s, char r)
 	}
 	return (count);
 }
+
 static void	free_split(char **spc, size_t i)
-{	
+{
 	while (i > 0)
 		free(spc[--i]);
 	free(spc);
 }
-static char	**ft_split_logic(char const *s, char c, char **result)
+
+static char	**ft_split_aux(char const *s, char c, char **result)
 {
 	size_t	start;
 	size_t	i;
@@ -55,7 +57,8 @@ static char	**ft_split_logic(char const *s, char c, char **result)
 			i++;
 		if (start < i)
 		{
-			if (!(result[n++] = ft_substr(s, start, i - start)))
+			result[n] = ft_substr(s, start, i - start);
+			if (!result[n++])
 			{
 				free_split(result, n);
 				return (NULL);
@@ -65,6 +68,7 @@ static char	**ft_split_logic(char const *s, char c, char **result)
 	result[n] = NULL;
 	return (result);
 }
+
 char	**ft_split(char const *s, char c)
 {
 	char	**result;
@@ -74,5 +78,5 @@ char	**ft_split(char const *s, char c)
 	result = malloc(sizeof(char *) * (ft_wordcount(s, c) + 1));
 	if (!result)
 		return (NULL);
-	return (ft_split_logic(s, c, result));
+	return (ft_split_aux(s, c, result));
 }

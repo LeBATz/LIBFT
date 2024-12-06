@@ -6,7 +6,7 @@
 /*   By: rdavid-g <rdavid-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:17:24 by rdavid-g          #+#    #+#             */
-/*   Updated: 2024/11/27 17:34:22 by rdavid-g         ###   ########.fr       */
+/*   Updated: 2024/12/06 23:06:12 by rdavid-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,14 @@
 void	*ft_memchr(const void *s, int r, size_t n)
 {
 	size_t	i;
+	unsigned char	*str;
 
 	i = 0;
+	str = (unsigned char *)s;
 	while (i < n)
 	{
-		if (((unsigned char *) s)[i] == (char) r)
-			return ((void *)(s + 1));
+		if (str[i] == (unsigned char)r)
+			return ((unsigned char *)&s[i]);
 		i++;
 	}
 	return (NULL);
