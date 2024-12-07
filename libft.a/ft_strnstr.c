@@ -6,7 +6,7 @@
 /*   By: rdavid-g <rdavid-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 16:58:14 by rdavid-g          #+#    #+#             */
-/*   Updated: 2024/12/06 23:10:31 by rdavid-g         ###   ########.fr       */
+/*   Updated: 2024/12/07 19:56:28 by rdavid-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	while (i < len && big[i])
 	{
 		j = 0;
-		while (i + j < len && little[i])
+		while (i + j < len && little[j])
 		{
 			if (little[j] != big[i + j])
-				break;
+				break ;
 			j++;
 		}
 		if (little[j] == '\0')

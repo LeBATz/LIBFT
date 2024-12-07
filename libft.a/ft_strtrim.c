@@ -28,7 +28,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (i >= j)
 		return (ft_strdup(""));
 	return (ft_substr(s1, i, j - i));
-} 
+}
+
 // int	main(void)
 // {
 // 	char *s1 = "abobora123nada";

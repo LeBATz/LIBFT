@@ -6,7 +6,7 @@
 /*   By: rdavid-g <rdavid-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:17:24 by rdavid-g          #+#    #+#             */
-/*   Updated: 2024/12/06 23:06:12 by rdavid-g         ###   ########.fr       */
+/*   Updated: 2024/12/07 19:52:29 by rdavid-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memchr(const void *s, int r, size_t n)
 {
-	size_t	i;
-	unsigned char	*str;
+	size_t				i;
+	unsigned char		*str;
 
 	i = 0;
 	str = (unsigned char *)s;
