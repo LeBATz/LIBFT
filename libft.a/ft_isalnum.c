@@ -6,7 +6,7 @@
 /*   By: rdavid-g <rdavid-g@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:33:57 by rdavid-g          #+#    #+#             */
-/*   Updated: 2024/11/27 18:28:05 by rdavid-g         ###   ########.fr       */
+/*   Updated: 2024/12/08 17:34:41 by rdavid-g         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,23 @@ int	ft_isalnum(int r)
 	else
 		return (0);
 }
+// int	main(void)
+// {
+// 	char	test_chars[] = {'A', 'z', '0', '9', '@', ' ', '\n', '5'};
+// 	int		array_size;
+// 	int		i;
+// 	int		original_result;
+// 	int		custom_result;
+
+// 	array_size = sizeof(test_chars) / sizeof(test_chars[0]);
+// 	i = 0;
+// 	while (i < array_size)
+// 	{
+// 		original_result = isalnum((unsigned char)test_chars[i]);
+// 		custom_result = ft_isalnum(test_chars[i]);
+// 		printf("Char: '%c' | Original: %d | Custom: %d\n",
+// 			test_chars[i], original_result, custom_result);
+// 		i++;
+// 	}
+// 	return (0);
+// }

@@ -32,3 +32,41 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 		ft_memcpy(ptr, ptr2, len);
 	return (dest);
 }
+// static void	print_memory(void *ptr, size_t size)
+// {
+// 	unsigned char	*p;
+// 	size_t			i;
+
+// 	p = (unsigned char *)ptr;
+// 	i = 0;
+// 	while (i < size)
+// 	{
+// 		printf("%02x ", p[i]);
+// 		i++;
+// 	}
+// 	printf("\n");
+// }
+
+// int	main(void)
+// {
+// 	char	str[] = "abcdefghijklmnopqrstuvwxyz";
+// 	char	str2[] = "abcdefghijklmnopqrstuvwxyz";
+
+// 	printf("Original string: %s\n", str);
+// 	printf("Original memory: ");
+// 	print_memory(str, strlen(str));
+
+// 	printf("\nStandard memmove:\n");
+// 	memmove(str + 4, str, 10);
+// 	printf("Result string: %s\n", str);
+// 	printf("Result memory: ");
+// 	print_memory(str, strlen(str));
+
+// 	printf("\nCustom ft_memmove:\n");
+// 	ft_memmove(str2 + 4, str2, 10);
+// 	printf("Result string: %s\n", str2);
+// 	printf("Result memory: ");
+// 	print_memory(str2, strlen(str2));
+
+// 	return (0);
+// }

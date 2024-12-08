@@ -26,3 +26,35 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_bzero(ptr, count * size);
 	return (ptr);
 }
+// int	main(void)
+// {
+// 	int		*numbers1;
+// 	int		*numbers2;
+// 	int		nmemb = 5;
+// 	int		size = sizeof(int);
+// 	int		i;
+
+// 	numbers1 = (int *)calloc(nmemb, size);
+// 	numbers2 = (int *)ft_calloc(nmemb, size);
+
+// 	printf("Using calloc:\n");
+// 	i = 0;
+// 	while (i < nmemb)
+// 	{
+// 		printf("numbers1[%d]: %d\n", i, numbers1[i]);
+// 		i++;
+// 	}
+
+// 	printf("\nUsing ft_calloc:\n");
+// 	i = 0;
+// 	while (i < nmemb)
+// 	{
+// 		printf("numbers2[%d]: %d\n", i, numbers2[i]);
+// 		i++;
+// 	}
+
+// 	free(numbers1);
+// 	free(numbers2);
+
+// 	return (0);
+// }

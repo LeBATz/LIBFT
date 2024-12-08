@@ -53,3 +53,25 @@ char	*ft_itoa(int n)
 	}
 	return (res);
 }
+// int	main(void)
+// {
+// 	int		numbers[] = {0, -42, 42, 2147483647, -2147483648, 100, -100};
+// 	int		count = sizeof(numbers) / sizeof(numbers[0]);
+// 	char	*result;
+// 	int		i;
+
+// 	i = 0;
+// 	while (i < count)
+// 	{
+// 		result = ft_itoa(numbers[i]);
+// 		if (result)
+// 		{
+// 			printf("Input: %d, Output: %s\n", numbers[i], result);
+// 			free(result);
+// 		}
+// 		else
+// 			printf("Memory allocation failed for %d\n", numbers[i]);
+// 		i++;
+// 	}
+// 	return (0);
+// }

@@ -29,3 +29,32 @@ char	*ft_strdup(const char *s1)
 	str[i] = '\0';
 	return (str);
 }
+// int	main(void)
+// {
+// 	char *test1 = "Hello, World!";
+// 	char *test2 = "42 School";
+// 	char *dup1;
+// 	char *dup2;
+
+// 	dup1 = strdup(test1);
+// 	dup2 = ft_strdup(test1);
+
+// 	printf("Original: %s\n", test1);
+// 	printf("Using strdup: %s\n", dup1);
+// 	printf("Using ft_strdup: %s\n", dup2);
+
+// 	free(dup1);
+// 	free(dup2);
+
+// 	dup1 = strdup(test2);
+// 	dup2 = ft_strdup(test2);
+
+// 	printf("\nOriginal: %s\n", test2);
+// 	printf("Using strdup: %s\n", dup1);
+// 	printf("Using ft_strdup: %s\n", dup2);
+
+// 	free(dup1);
+// 	free(dup2);
+
+// 	return (0);
+// }

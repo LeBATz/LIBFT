@@ -80,3 +80,68 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (ft_split_aux(s, c, result));
 }
+// int	main(void)
+// {
+// 	char	**result;
+// 	int		i;
+
+// 	// Test 1: Normal case
+// 	printf("Test 1:\n");
+// 	result = ft_split("Hello world! This is a test.", ' ');
+// 	if (result)
+// 	{
+// 		for (i = 0; result[i] != NULL; i++)
+// 		{
+// 			printf("%s\n", result[i]);
+// 			free(result[i]);
+// 		}
+// 		free(result);
+// 	}
+
+// 	// Test 2: String with consecutive delimiters
+// 	printf("\nTest 2:\n");
+// 	result = ft_split(",,split,,this,string,", ',');
+// 	if (result)
+// 	{
+// 		for (i = 0; result[i] != NULL; i++)
+// 		{
+// 			printf("%s\n", result[i]);
+// 			free(result[i]);
+// 		}
+// 		free(result);
+// 	}
+
+// 	// Test 3: Empty string
+// 	printf("\nTest 3:\n");
+// 	result = ft_split("", ',');
+// 	if (result)
+// 	{
+// 		for (i = 0; result[i] != NULL; i++)
+// 		{
+// 			printf("%s\n", result[i]);
+// 			free(result[i]);
+// 		}
+// 		free(result);
+// 	}
+
+// 	// Test 4: String with no delimiters
+// 	printf("\nTest 4:\n");
+// 	result = ft_split("NoDelimitersHere", ',');
+// 	if (result)
+// 	{
+// 		for (i = 0; result[i] != NULL; i++)
+// 		{
+// 			printf("%s\n", result[i]);
+// 			free(result[i]);
+// 		}
+// 		free(result);
+// 	}
+
+// 	// Test 5: NULL input
+// 	printf("\nTest 5:\n");
+// 	result = ft_split(NULL, ',');
+// 	if (result == NULL)
+// 		printf("NULL input handled correctly\n");
+
+// 	return (0);
+// }

@@ -14,5 +14,23 @@
 
 int	ft_isprint(int r)
 {
-	return (r >= 32 && r <= 126);
+	if (r >= 32 && r <= 126)
+		return (1);
+	else
+		return (0);
 }
+// int	main(void)
+// {
+// 	int	test_chars[] = {31, 32, 65, 126, 127, 0};
+// 	int	i;
+
+// 	i = 0;
+// 	while (test_chars[i] != 0)
+// 	{
+// 		printf("Testing character ASCII %d:\n", test_chars[i]);
+// 		printf("isprint: %d\n", isprint(test_chars[i]));
+// 		printf("ft_isprint: %d\n\n", ft_isprint(test_chars[i]));
+// 		i++;
+// 	}
+// 	return (0);
+// }

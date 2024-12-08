@@ -39,3 +39,58 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str3[i] = '\0';
 	return (str3);
 }
+// int	main(void)
+// {
+// 	const char	*s1;
+// 	const char	*s2;
+// 	char		*result;
+
+// 	// Test case 1: Normal concatenation
+// 	s1 = "Hello, ";
+// 	s2 = "World!";
+// 	result = ft_strjoin(s1, s2);
+// 	printf("Test 1: %s\n", result);
+// 	free(result);
+
+// 	// Test case 2: Empty first string
+// 	s1 = "";
+// 	s2 = "Non-empty";
+// 	result = ft_strjoin(s1, s2);
+// 	printf("Test 2: %s\n", result);
+// 	free(result);
+
+// 	// Test case 3: Empty second string
+// 	s1 = "Non-empty";
+// 	s2 = "";
+// 	result = ft_strjoin(s1, s2);
+// 	printf("Test 3: %s\n", result);
+// 	free(result);
+
+// 	// Test case 4: Both strings empty
+// 	s1 = "";
+// 	s2 = "";
+// 	result = ft_strjoin(s1, s2);
+// 	if (result)
+// 	{
+// 		printf("Test 4: '%s'\n", result);
+// 	}
+// 	else
+// 	{
+// 		printf("Test 4: NULL\n");
+// 	}
+// 	free(result);
+
+// 	// Test case 5: NULL input (should return NULL)
+// 	result = ft_strjoin(NULL, "Test");
+// 	if (result)
+// 	{
+// 		printf("Test 5: %s\n", result);
+// 	}
+// 	else
+// 	{
+// 		printf("Test 5: NULL\n");
+// 	}
+// 	free(result);
+
+// 	return (0);
+// }

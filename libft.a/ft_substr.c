@@ -38,3 +38,33 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str2[j] = '\0';
 	return (str2);
 }
+// int	main(void)
+// {
+// 	char	*str;
+// 	char	*substr;
+
+// 	str = "Hello, World!";
+// 	printf("Original string: %s\n", str);
+
+// 	substr = ft_substr(str, 7, 5);
+// 	printf("Substring (start: 7, len: 5): %s\n", substr);
+// 	free(substr);
+
+// 	substr = ft_substr(str, 0, 5);
+// 	printf("Substring (start: 0, len: 5): %s\n", substr);
+// 	free(substr);
+
+// 	substr = ft_substr(str, 13, 5);
+// 	printf("Substring (start > strlen): %s\n", substr);
+// 	free(substr);
+
+// 	substr = ft_substr(str, 7, 100);
+// 	printf("Substring (len > remaining): %s\n", substr);
+// 	free(substr);
+
+// 	substr = ft_substr(NULL, 0, 5);
+// 	printf("Substring (NULL input): %s\n", substr);
+// 	free(substr);
+
+// 	return (0);
+// }
